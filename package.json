@@ -1,0 +1,56 @@
+{
+  "name": "frontend-dev-assignment",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "canned": "0.3.12",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "webpack": "^5.39.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.7.4",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-controls": "^6.2.9",
+    "@storybook/addon-docs": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/addons": "^6.2.9",
+    "@storybook/react": "6.2.9",
+    "@testing-library/react": "^11.2.7",
+    "babel-loader": "8.0.6",
+    "concurrently": "3.5.1",
+    "jest-environment-jsdom-sixteen": "^2.0.0",
+    "react-scripts": "3.2.0"
+  },
+  "scripts": {
+    "start": "concurrently \"react-scripts start\" \"canned -p 5000 ./api/\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jest-environment-jsdom-sixteen --silent",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -s ./public"
+  },
+  "proxy": "http://localhost:5000",
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "jsx-a11y/aria-role": [
+        2,
+        {
+          "ignoreNonDOM": true
+        }
+      ]
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

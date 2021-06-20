@@ -1,0 +1,45 @@
+.suggestion-box {
+    margin-top: 0;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px 10px 10px;
+    border-bottom: none;
+  }
+  
+  .suggestion-box .list {
+    width: 100%;
+    border: none;
+  }
+  
+  .item,
+  .item {
+    padding: 20px 35px 16px 16px;
+    border: 1px solid #a5a5a5;
+    border-top: none;
+    outline: none;
+    font-size: small;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .item:hover,
+  .item.hover {
+    background-color: #eee;
+  }
+  
+  .light-text {
+    font-weight: 100;
+  }
+  
+  .fadeout {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .fadein {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.6s ease;
+  }
